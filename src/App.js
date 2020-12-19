@@ -12,7 +12,7 @@ function App() {
       {" "}
       <Router>
         {" "}
-        <React.Fragment>
+        <div className="app">
           {" "}
           <NavBar />
           <div className="container">
@@ -21,7 +21,7 @@ function App() {
               <Route eact path="/lyrics/track/:id" component={Lyrics} />
             </Switch>
           </div>
-        </React.Fragment>
+        </div>
       </Router>
     </Provider>
   );

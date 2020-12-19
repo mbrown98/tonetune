@@ -34,7 +34,7 @@ class Search extends Component {
         {(value) => {
           const { dispatch } = value;
           return (
-            <div className="card card-body mb-4 p-4">
+            <div className="card card-body mb-4 p-4 searchCard">
               <h1 className="display-4 text-center">Search For A Song</h1>
               <p className="lead text-center">Know the Lyrics? Find the Song</p>
               <form onSubmit={this.findTrack.bind(this, dispatch)}>
@@ -49,10 +49,7 @@ class Search extends Component {
                     onChange={this.onChange}
                   />
                 </div>
-                <button
-                  className="btn btn-primary btn-lg btn-block mb-5"
-                  type="submit"
-                >
+                <button className="btn btn-primary btn-lg  mb-5" type="submit">
                   Get Track Lyrics
                 </button>
               </form>
